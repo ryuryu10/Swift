@@ -19,9 +19,11 @@ enum SchoolDetail {
     
     func getName() -> String {
         switch self {
-        case .elementray(let name):
+        case .elementary(let name):
             return name
         case let .middle(name):
+            return name
+        case .high(name: let name):
             return name
         }
     }
